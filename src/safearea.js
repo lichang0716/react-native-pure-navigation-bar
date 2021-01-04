@@ -32,8 +32,7 @@ function isIphoneX() {
         !Platform.isPad &&
         !Platform.isTVOS &&
         (
-            edge === 812 || // X + XS
-            edge === 896 // XR + XS Max
+            edge >= 812 // 修改判断刘海屏的方式
         )
     );
 }
